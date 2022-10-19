@@ -4,29 +4,77 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Zuria Task</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
-
-  <style>
-    .flex-container {
-      display: flex;
-      background-color: coral;
-    }
-
-    .flex-container>div {
-      background-color: azure;
-      margin: 10px;
-      padding: 20px;
-      font-size: 30px;
-    }
-  </style>
 </head>
 
 <body>
-  <div class="flex-container">
-    <div>Card 1</div>
-    <div>Card 2</div>
-    <div>Card 3</div>
+  <div class="container">
+    <section>
+      <div class="registration">
+        <h1>Register with Us Here!</h1>
+        <form>
+          <div>
+            <label for="FirstName">FirstName</label>
+            <input type="text" placeholder="firstName" />
+
+          </div>
+          <div>
+            <label for="LastNae">LastName</label>
+            <input type="text" placeholder="LastName" />
+
+          </div>
+          <div>
+            <label for="phonenumber">PhoneNumber</label>
+            <input type="tel" placeholder="PhoneNumber" />
+
+          </div>
+          <div>
+            <label for="email">Email-Address</label>
+            <input type="email" placeholder="email" />
+
+          </div>
+          <div>
+
+            <span class="legend">Gender</span>
+            <fieldset id="setA">
+              <input id="setA_male" type="checkbox" checked>
+              <label for="setA_male">Male</label>
+              <input id="setA_female" type="checkbox" checked>
+              <label for="setA_female">Female</label>
+            </fieldset>
+          </div>
+          <label for="birthday">Birthday:</label>
+          <input type="date" id="birthday" name="birthday">
+
+          <label for="favcolor">Select your favorite color:</label>
+          <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+
+
+        </form>
+
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h1>Login</h1>
+        <form>
+          <label for="email"> Email</label>
+          <input type="email" id="email" placeholder="email" />
+          <label for="password"> Password</label>
+          <input type="password" id="password" />
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </section>
+
+    <section >
+      <div>
+        <h1>Success!</h1>
+
+        you have successfully logined
+      </div>
+    </section>
   </div>
   <script src="script.js"></script>
 
